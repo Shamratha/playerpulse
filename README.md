@@ -1,5 +1,8 @@
 # PlayerPulse
 
+**🔗 Live demo: [playerpulse-xlyl.onrender.com](https://playerpulse-xlyl.onrender.com)**
+*(free tier — the first visit after idle takes ~1 min to wake up)*
+
 Player **churn prediction & retention analytics** for mobile games, built on the
 real *Cookie Cats* A/B-test dataset (90,189 players).
 
