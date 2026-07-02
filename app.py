@@ -22,7 +22,7 @@ from features import (  # noqa: E402
 )
 from modeling import NUMERIC, CATEGORICAL, ALL_FEATURES  # noqa: E402
 from economics import Campaign, plan, roi_curve  # noqa: E402
-import shap  # noqa: E402
+# shap is imported lazily inside explain_row() to keep startup/RAM low on free hosts
 
 st.set_page_config(page_title="PlayerPulse", layout="wide")
 
@@ -136,6 +136,7 @@ def shap_background(n=60):
 def explain_row(row: dict):
     """SHAP contributions for one player. Numerics are explained; categoricals
     (near-zero importance) are held fixed at the player's values."""
+    import shap  # lazy: only load when the user actually asks for an explanation
     model = get_model()
     cat_vals = {c: row[c] for c in CATEGORICAL}
 

@@ -1,0 +1,19 @@
+# Render Blueprint — deploy the PlayerPulse Streamlit dashboard.
+# In Render: New + -> Blueprint -> connect this repo -> Apply.
+services:
+  - type: web
+    name: playerpulse
+    runtime: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: >-
+      streamlit run app.py
+      --server.port $PORT
+      --server.address 0.0.0.0
+      --server.headless true
+      --server.enableCORS false
+      --server.enableXsrfProtection false
+    healthCheckPath: /_stcore/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.13.4"
