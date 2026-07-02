@@ -155,8 +155,10 @@ matrix, not raw data. This is exactly why the pipeline is split the way it is.
 
 ## Deployment
 
-See [DEPLOY.md](DEPLOY.md) — one-command push to **Streamlit Community Cloud** for
-a public, shareable URL.
+Live on **Render** (free tier) at
+[playerpulse-xlyl.onrender.com](https://playerpulse-xlyl.onrender.com) — the
+Blueprint config is in [`render.yaml`](render.yaml). See [DEPLOY.md](DEPLOY.md) for
+the full guide, covering both **Render** and **Streamlit Community Cloud**.
 
 ## Data source
 
