@@ -1,0 +1,58 @@
+{
+  "retention_1": {
+    "outcome": "retention_1",
+    "control_rate": 0.4482,
+    "treatment_rate": 0.4423,
+    "effect_pp": -0.592,
+    "ci95_pp": [
+      -1.256,
+      0.048
+    ],
+    "z": -1.787,
+    "p_value": 0.07392,
+    "significant_0.05": false
+  },
+  "retention_7": {
+    "outcome": "retention_7",
+    "control_rate": 0.1902,
+    "treatment_rate": 0.182,
+    "effect_pp": -0.818,
+    "ci95_pp": [
+      -1.308,
+      -0.333
+    ],
+    "z": -3.157,
+    "p_value": 0.00159,
+    "significant_0.05": true
+  },
+  "heterogeneity_day7": [
+    {
+      "bucket": "0-5",
+      "players": 24717,
+      "control_rate": 0.0122,
+      "treatment_rate": 0.0131,
+      "effect_pp": 0.092
+    },
+    {
+      "bucket": "6-30",
+      "players": 32845,
+      "control_rate": 0.0669,
+      "treatment_rate": 0.0613,
+      "effect_pp": -0.557
+    },
+    {
+      "bucket": "31-100",
+      "players": 20242,
+      "control_rate": 0.284,
+      "treatment_rate": 0.2623,
+      "effect_pp": -2.178
+    },
+    {
+      "bucket": "100+",
+      "players": 12384,
+      "control_rate": 0.7138,
+      "treatment_rate": 0.7124,
+      "effect_pp": -0.142
+    }
+  ]
+}

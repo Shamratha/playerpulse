@@ -1,0 +1,57 @@
+{
+  "best_model": "enriched_hgb",
+  "baseline_scores": {
+    "roc_auc": 0.891,
+    "pr_auc": 0.9684,
+    "brier": 0.1371
+  },
+  "enriched_scores": {
+    "logreg": {
+      "roc_auc": 0.927,
+      "pr_auc": 0.9803,
+      "brier": 0.1077
+    },
+    "hgb": {
+      "roc_auc": 0.9278,
+      "pr_auc": 0.9805,
+      "brier": 0.1066
+    }
+  },
+  "roc_auc_lift": 0.0368,
+  "numeric_features": [
+    "log_gamerounds",
+    "retention_1",
+    "is_gate_40",
+    "played_zero",
+    "log_sessions",
+    "avg_session_min",
+    "days_since_install",
+    "log_level",
+    "n_purchases",
+    "log_spend",
+    "log_ads",
+    "friends_invited",
+    "crashes"
+  ],
+  "categorical_features": [
+    "platform",
+    "region"
+  ],
+  "importance": {
+    "log_gamerounds": 0.16205,
+    "friends_invited": 0.05587,
+    "crashes": 0.01752,
+    "log_sessions": 0.00228,
+    "retention_1": 0.00071,
+    "log_level": 0.00062,
+    "n_purchases": 0.0002,
+    "log_ads": 0.00013,
+    "avg_session_min": 0.00013,
+    "log_spend": 0.00012,
+    "is_gate_40": 5e-05,
+    "days_since_install": 3e-05,
+    "played_zero": 0.0,
+    "platform": -1e-05,
+    "region": -2e-05
+  }
+}

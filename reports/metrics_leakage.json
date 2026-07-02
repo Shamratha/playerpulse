@@ -1,0 +1,42 @@
+{
+  "methodology": "All models: HistGradientBoosting on the same 25% held-out test split (random_state=42); bootstrap 95% CI with 1000 resamples (seed=42).",
+  "safe": {
+    "role": "headline / leakage-free predictive",
+    "features": [
+      "retention_1",
+      "is_gate_40"
+    ],
+    "auc": 0.7156,
+    "ci95": [
+      0.7077,
+      0.7234
+    ],
+    "cv_auc_mean": 0.7097,
+    "cv_auc_std": 0.0027,
+    "brier": 0.1347
+  },
+  "engagement": {
+    "role": "engagement-inclusive (contains 14-day rounds)",
+    "features": [
+      "log_gamerounds",
+      "retention_1",
+      "is_gate_40"
+    ],
+    "auc": 0.8912,
+    "ci95": [
+      0.8856,
+      0.8961
+    ]
+  },
+  "full": {
+    "role": "full enriched (incl. simulated features)",
+    "n_features": 14,
+    "auc": 0.8904,
+    "ci95": [
+      0.8848,
+      0.8955
+    ]
+  },
+  "safe_share_of_power": 0.552,
+  "note": "14-day rounds partly postdates the 7-day label; the true <=7-day model lies between the safe and engagement numbers. Separating them needs event logs."
+}

@@ -1,0 +1,28 @@
+{
+  "best_model": "hgb",
+  "features": [
+    "log_gamerounds",
+    "retention_1",
+    "is_gate_40",
+    "played_zero"
+  ],
+  "test_size": 22547,
+  "scores": {
+    "logreg": {
+      "roc_auc": 0.891,
+      "pr_auc": 0.9684,
+      "brier": 0.1371
+    },
+    "hgb": {
+      "roc_auc": 0.8915,
+      "pr_auc": 0.9688,
+      "brier": 0.134
+    }
+  },
+  "coefficients": {
+    "log_gamerounds": -2.0891,
+    "played_zero": -0.3035,
+    "retention_1": 0.0173,
+    "is_gate_40": 0.0416
+  }
+}

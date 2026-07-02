@@ -1,0 +1,85 @@
+{
+  "model": "HistGradientBoosting + isotonic calibration",
+  "best_params": {
+    "l2_regularization": 1.0,
+    "learning_rate": 0.029812242770646535,
+    "max_depth": 3,
+    "max_iter": 300,
+    "max_leaf_nodes": 31,
+    "min_samples_leaf": 50
+  },
+  "cv_auc_mean": 0.8878,
+  "cv_auc_std": 0.003,
+  "test": {
+    "roc_auc": 0.8916,
+    "pr_auc": 0.969,
+    "brier_uncalibrated": 0.0913,
+    "brier_calibrated": 0.0913
+  },
+  "auc_ci95": [
+    0.8861,
+    0.8966
+  ],
+  "operating_threshold": 0.2667,
+  "confusion_at_threshold": [
+    [
+      1128,
+      3067
+    ],
+    [
+      178,
+      18174
+    ]
+  ],
+  "baseline_roc_auc": 0.8915,
+  "slice_auc": {
+    "version": {
+      "gate_40": 0.8943,
+      "gate_30": 0.8889
+    },
+    "payer": {
+      "free": 0.8872,
+      "payer": 0.8679
+    },
+    "platform": {
+      "Android": 0.893,
+      "iOS": 0.8895
+    },
+    "engaged": {
+      "played": 0.8871,
+      "zero": 0.5966
+    }
+  },
+  "importance": {
+    "log_gamerounds": 0.31694,
+    "retention_1": 0.00162,
+    "log_level": 0.00106,
+    "is_gate_40": 9e-05,
+    "log_sessions": 7e-05,
+    "avg_session_min": 5e-05,
+    "crashes": 4e-05,
+    "log_spend": 1e-05,
+    "friends_invited": -0.0,
+    "region": -1e-05,
+    "days_since_install": -2e-05,
+    "log_ads": -2e-05,
+    "n_purchases": -4e-05,
+    "platform": -5e-05
+  },
+  "features": [
+    "log_gamerounds",
+    "retention_1",
+    "is_gate_40",
+    "log_sessions",
+    "avg_session_min",
+    "days_since_install",
+    "log_level",
+    "n_purchases",
+    "log_spend",
+    "log_ads",
+    "friends_invited",
+    "crashes",
+    "platform",
+    "region"
+  ]
+}
